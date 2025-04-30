@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Story | SYNTAX</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="style.css" rel="stylesheet">
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <style>
+    .swiper {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 800px; /* Increased width */
+      height: 800px; /* Increased height */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: rgb(0, 0, 0);
+      border-radius: 15px; /* Slightly larger border radius */
+      box-shadow: 0 10px 30px rgba(210, 0, 0, 0.7); /* Enhanced shadow */
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+  
+    .swiper-slide img {
+      width: 100%; /* Set to 100% to match swiper slide size */
+      height: 60%; /* Adjust image height */
+      object-fit: cover;
+      border-radius: 15px 15px 0 0; /* Match the slide's border radius */
+    }
+  
+    .swiper-slide h3 {
+      margin: 15px 0 10px; /* Increased margin */
+      font-size: 24px; /* Larger text */
+      color: white;
+    }
+  
+    .swiper-slide p {
+      margin: 10px 15px;
+      text-align: center;
+      color: white;
+      font-size: 16px; /* Slightly larger font size */
+    }
+  
+    /* Modal Styles */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.8); /* Darker overlay */
+    }
+  
+    .modal-content {
+      background-color: rgb(0, 0, 0);
+      margin: 10% auto;
+      padding: 30px; /* Increased padding */
+      border-radius: 15px;
+      width: 70%; /* Larger modal width */
+      max-width: 800px; /* Set max-width for larger modal */
+    }
+  
+    .close {
+      color: #aaa;
+      font-size: 35px; /* Larger close button */
+      font-weight: bold;
+      position: absolute;
+      top: 10px;
+      right: 20px;
+    }
+  
+    .close:hover,
+    .close:focus {
+      color: white;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  
+    /* Adjust Swiper navigation buttons */
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: white;
+      font-size: 24px; /* Larger navigation buttons */
+    }
+  
+    .swiper-button-next {
+      margin-right: 250px; /* Adjusted right margin */
+    }
+  
+    .swiper-button-prev {
+      margin-left: 250px; /* Adjusted left margin */
+    }
+  </style>
+  
+</head>
+<body>
+
+<!-- Nav bar -->
+<nav>
+  <div class="nav-left">
+    <span>SYNTAX</span>
+  </div>
+  <div class="nav-right">
+    <a href="Home2.html">HOME</a>
+    <div class="dropdown">
+      <button class="dropbtn" style="margin-top: 0.3rem;">ABOUT</button>
+      <div class="dropdown-content">
+        <a href="OURSTORY.html">OUR STORY</a>
+        <a href="#event-details">EVENT DETAILS</a>
+      </div>
+    </div>
+    <a href="#shop">SHOP</a>
+    <a href="#register" class="register-button">REGISTER NOW</a>
+  </div>
+</nav>
+
+<!-- Text and Image Section -->
+<section class="story-section">
+  <div class="text-section">
+    <h1>This is an <span style="font-weight: bold;">important</span> part of our story</h1>
+    <h1>We didn't plan to start a band.</h1>
+    <h1>We just found something that felt real.</h1>
+    <h1>Music brought us together, and over time,<em> it became our voice.</em></h1>
+  </div>
+  <div class="image-container">
+    <img src="https://via.placeholder.com/800x800.png?text=SYNTAX+Band" alt="SYNTAX Band" class="placeholder-image" />
+  </div>
+</section>
+
+<!-- Swiper Container -->
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <!-- Card 1 -->
+    <div class="swiper-slide card" data-modal="modal1">
+      <img src="https://via.placeholder.com/300x200" alt="Band Member">
+      <h3>BAND MEMBER NAME 1</h3>
+      <p><strong>About</strong></p>
+      <p><em>Click card for more info</em></p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="swiper-slide card" data-modal="modal2">
+      <img src="https://via.placeholder.com/300x200" alt="Band Member">
+      <h3>BAND MEMBER NAME 2</h3>
+      <p><strong>About</strong></p>
+      <p><em>Click card for more info</em></p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="swiper-slide card" data-modal="modal3">
+      <img src="https://via.placeholder.com/300x200" alt="Band Member">
+      <h3>BAND MEMBER NAME 3</h3>
+      <p><strong>About</strong></p>
+      <p><em>Click card for more info</em></p>
+    </div>
+  </div>
+
+  <!-- Navigation buttons -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>
+
+<!-- Modal for Card 1 -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal1')">&times;</span>
+    <h2>Band Member Name</h2>
+    <p>More detailed information about this band member goes here.</p>
+  </div>
+</div>
+
+<!-- Modal for Card 2 -->
+<div id="modal2" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal2')">&times;</span>
+    <h2>Band Member Name</h2>
+    <p>More detailed information about this band member goes here.</p>
+  </div>
+</div>
+
+<!-- Modal for Card 3 -->
+<div id="modal3" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal3')">&times;</span>
+    <h2>Band Member Name</h2>
+    <p>More detailed information about this band member goes here.</p>
+  </div>
+</div>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Swiper Initialization -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    loop: true,
+    coverflowEffect: {
+      rotate: 30,
+      stretch: 0,
+      depth: 200,
+      modifier: 1,
+      slideShadows: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+  // Open Modal Function
+  document.querySelectorAll('.swiper-slide').forEach(function(slide) {
+    slide.addEventListener('click', function() {
+      var modalId = slide.getAttribute('data-modal');
+      document.getElementById(modalId).style.display = "block";
+    });
+  });
+
+  // Close Modal Function
+  function closeModal(modalId) {
+    document.getElementById(modalId).style.display = "none";
+  }
+
+  // Close modals when clicked outside the modal content
+  window.onclick = function(event) {
+    if (event.target.classList.contains("modal")) {
+      closeModal(event.target.id);
+    }
+  };
+</script>
+
+<section class="story-section">
+  <div class="text-section">
+      <!-- Title -->
+      <h1 style="font-size: 6rem; font-weight: bold; margin: 0;">
+        <span style="color: #BE100C;">HOW IT ALL</span> <span style="color: white;">STARTED</span>
+      </h1>
+
+      <div style="font-size: 2rem; margin-top: 40px;">
+        <p><i class="fas fa-calendar-alt" style="margin-right: 10px;"></i>YEAR DETAIL</p>
+        <p><i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i>PLACE</p>
+      </div>
+
+      <!-- First Jam Label -->
+      <h2 style="font-size: 4rem; font-weight: bold; margin-top: 40px;">FIRST JAM</h2>
+    </div>
+
+    <!-- Right Column: Images -->
+        <div class="image-container" style="display: flex; gap: 20px;">
+            <img src="https://via.placeholder.com/400x400.png?text=SYNTAX+Band+1" alt="SYNTAX Band 1" class="placeholder-image" style="width: 400px; border-radius: 10px; margin-left: -20px;" />
+            <img src="https://via.placeholder.com/400x400.png?text=SYNTAX+Band+2" alt="SYNTAX Band 2" class="placeholder-image" style="width: 400px; border-radius: 10px; margin-left: -20px;" />
+        </div>
+
+  </div>
+</section>
+
+<section style="margin-left: 40px; padding: 80px 25px; background-color: black; text-align: center; color: white; margin-bottom: 100px;">
+  <!-- Title -->
+  <div class="text-section">
+    <h1 style="font-size: 6rem; font-weight: bold; margin: 0;">
+      <span style="color: #ffffff;">WHERE</span> <span style="color: #BE100C;">WE'VE</span><span style="color: white;"> BEEN</span>
+    </h1>
+  </div>
+
+  <!-- Images and Details -->
+  <div class="image-container" style="display: flex; justify-content: center; gap: 40px; margin-top: 80px; flex-wrap: wrap;">
+    
+    <!-- Image 1 -->
+    <div style="text-align: center;">
+      <img src="https://via.placeholder.com/300x300.png?text=SYNTAX+Band+1" alt="SYNTAX Band 1" style="width: 300px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.5);" />
+      <p style="margin-top: 15px; font-size: 1.5rem;">Band Performance at Event A (2023)</p>
+    </div>
+
+    <!-- Image 2 -->
+    <div style="text-align: center;">
+      <img src="https://via.placeholder.com/300x300.png?text=SYNTAX+Band+2" alt="SYNTAX Band 2" style="width: 300px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.5);" />
+      <p style="margin-top: 15px; font-size: 1.5rem;">Live Gig at School Fair (2024)</p>
+    </div>
+
+    <!-- Image 3 -->
+    <div style="text-align: center;">
+      <img src="https://via.placeholder.com/300x300.png?text=SYNTAX+Band+3" alt="SYNTAX Band 3" style="width: 300px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.5);" />
+      <p style="margin-top: 15px; font-size: 1.5rem;">Community Jam Night (2024)</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+</body>
+</html>

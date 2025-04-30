@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;700&display=swap');
+
+
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family: 'Be Vietnam', Arial, sans-serif;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+} 
+
+/* LOADING ANIMATION STYLES */
+#loading-screen {
+    position: fixed;
+    inset: 0;
+    background-color: black;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease;
+}
+
+.loading-text {
+    font-size: 6rem;
+    font-weight: bold;
+    letter-spacing: 0.3em;
+    color: #BE100C;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.loading-text span.locked {
+    color: white;
+    animation: pulse 0.3s ease;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1.5); }
+    100% { transform: scale(1); }
+}
+
+.register-button:hover {
+    background-color: #BE100C;
+    box-shadow: 0 0 15px #BE100C, 0 0 25px #BE100C;
+    transform: scale(1.05);
+    transition: 0.3s ease;
+    font-weight: bold;
+}
+    
+
+/* AFTER LOADING CONTENT */
+.main-content {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: black;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    overflow: visible; /* Fixed dropdown issue */
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+.nav-left {
+    margin-left: 15px;
+    color: white;
+
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* REGISTER BUTTON */
+.register-button {
+    background-color: #BE100C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+
+/* CONTENT SECTION */
+.content {
+    margin-top: 12%; /* Adjust value as needed */
+}
+
+.content h1 {
+    color: #BE100C;
+    font-size: 10rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.content h2 {
+    color: white;
+    font-size: 4rem;
+    margin-top: 0px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+
+
+/* SECTION HEADERS */
+h1 {
+    color: white;
+    font-size: 2rem;
+    margin-top: 0px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+
+/* SECTION HEADERS */
+h2 {
+    color: white;
+    font-size: 2rem;
+    margin-top: 0px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* SECTION HEADERS */
+h3 {
+    color: white;
+    font-size: 2rem;
+    margin-top: 0px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* NEW SECTION: OUR STORY */
+.story-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 25px 80px 50px;
+    gap: 20px;
+    background-color: black;
+    color: white;
+    margin-left: 40px;
+}
+
+.text-section {
+    flex: 1;
+    text-align: left;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 60px;
+}
+
+.placeholder-image {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #BE100C55;
+}
+
+/* DROPDOWN MENU (ABOUT) */
+.dropbtn {
+    padding: 14px 16px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin-top: 0.1rem;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 230px;
+    height: 120px;
+    box-shadow: 0 0 15px #BE100C;
+    z-index: 10000;
+    border-radius: 3px;
+    text-align: left;
+    border: 1px solid #BE100C;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+}
+
+.dropdown-content a:hover {
+    background-color: #BE100C;
+    color: white;
+    box-shadow: 0 0 15px #BE100C;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    color: #BE100C;
+}
+
+.carousel-wrapper {
+    max-width: 600px; /* Smaller width */
+    margin: 0 auto; /* Center it horizontally */
+  }
+  
+  .carousel-inner img {
+    height: auto;
+    max-height: 500px; /* Limit the image height */
+    object-fit: cover; /* Optional: keeps image nicely fit */
+  }
+  
