@@ -287,7 +287,7 @@ nav {
 }
 
 .dates {
-  height: 50em;
+  height: 25em;
   font-family: 'Be Vietnam', Arial, sans-serif;
 }
 
@@ -330,8 +330,8 @@ nav {
   animation-timeline: view();
   width:230px;
   height:auto;
-  margin-top: -150px;
-  margin-left: 300px;
+  margin-top: -120px;
+  margin-left: 990px;
 }
 
 .day1 h1{
@@ -371,6 +371,12 @@ nav {
   margin-top: -380px;
 }
 
+.date h1{
+  font-family: 'Be Vietnam', Arial, sans-serif;
+  font-weight: bold;
+  font-size:50px;
+}
+
 .day2 h1{
   animation-name: dscrollI;
   animation-duration: 5s;
@@ -408,6 +414,12 @@ nav {
   margin-top: 20px;
 }
 
+.date1 h1{
+  font-family: 'Be Vietnam', Arial, sans-serif;
+  font-weight: bold;
+  font-size:50px;
+}
+
 .day3 h1{
   animation-name: dscrollI;
   animation-duration: 5s;
@@ -443,6 +455,12 @@ nav {
   font-weight: bold;
   margin-left: 890px;
   margin-top: 20px;
+}
+
+.date2 h1{
+  font-family: 'Be Vietnam', Arial, sans-serif;
+  font-weight: bold;
+  font-size:50px;
 }
 
 .ticketbanner{
