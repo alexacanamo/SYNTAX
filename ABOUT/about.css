@@ -9,7 +9,6 @@ html body {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
   height:10000px
 } 
-
 nav {
   position: fixed;
   top: 0;
@@ -262,6 +261,31 @@ nav {
   margin-left: -450px;
 }
 
+.tourimg{
+  animation-name: popd;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-timeline: scroll();
+  background-image:
+  linear-gradient(to right, rgba(245, 246, 252, 0.0), rgba(0, 0, 0, 0.73)),
+  url('../IMAGES/band12.jpeg');
+  width: 750px;
+  height: 460px;
+  background-size: cover;
+  margin:auto;
+  color: white;
+  font-family: 'Be Vietnam', Arial, sans-serif;
+}
+
+.tourimg img{
+  animation-name: popd;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-timeline: scroll();
+  width: auto;
+  height: 500px;
+}
+
 .dates {
   height: 50em;
   font-family: 'Be Vietnam', Arial, sans-serif;
@@ -343,8 +367,8 @@ nav {
 	background: #ffffff;
   font-family: 'Be Vietnam', Arial, sans-serif;
   font-weight: bold;
-  margin-left: 880px;
-  margin-top: 75px;
+  margin-left: 950px;
+  margin-top: -380px;
 }
 
 .day2 h1{
@@ -380,7 +404,7 @@ nav {
 	background: #ffffff;
   font-family: 'Be Vietnam', Arial, sans-serif;
   font-weight: bold;
-  margin-left: 850px;
+  margin-left: 920px;
   margin-top: 20px;
 }
 
@@ -417,8 +441,132 @@ nav {
 	background: #ffffff;
   font-family: 'Be Vietnam', Arial, sans-serif;
   font-weight: bold;
-  margin-left: 820px;
+  margin-left: 890px;
   margin-top: 20px;
+}
+
+.ticketbanner{
+  background-image:linear-gradient(to bottom, rgba(245, 246, 252, 0.0), rgba(0, 0, 0, 1)), url('../IMAGES/band12.jpeg');
+  width: 100%;
+  height: 800px;
+  background-size: cover;
+  margin:300px auto;
+  color: white;
+  font-family: 'Be Vietnam', Arial, sans-serif;
+}
+
+.gradient2 h1{
+  color:white;
+  font-family: 'Be Vietnam', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 100px;
+  margin-top: 150px;
+}
+
+.gradient2 span{
+  color:#BE100C;
+  font-family: 'Be Vietnam', Arial, sans-serif;
+  font-weight: bold;
+}
+
+.gradient2 p{
+  color:white;
+  font-family: 'Be Vietnam', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.ticketsearch{
+  border-radius: 60px;
+  background: #3b3b3b;
+  padding: 20px; 
+  width: 1000px;
+  height: 400px; 
+  margin: 90px auto ;
+}
+
+.ticketsearch h1{
+  color:#BE100C;
+  font-family: 'Be Vietnam', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  margin-top: 50px;
+  margin-right:480px;
+}
+
+.ticketsearch h2{
+  color:white;
+  font-family: 'Be Vietnam', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  margin-top: -10px;
+  margin-right:265px;
+}
+
+.searcharea{
+  background: #2e2e2e;
+  padding: 20px; 
+  width: 900px;
+  height: 170px; 
+  margin:0 auto ;
+}
+
+.search-container {
+  margin: 30px;
+  float: left;
+}
+
+input[type=text] {
+  padding: 6px 40px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.search-container button {
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background: #ccc;
+}
+
+.fld-left{
+  float: left;
+}
+
+.ticketlist{
+  background: #131313;
+  width: 1200px;
+  height: 100px; 
+  margin:auto ;
+}
+
+.ticketlistcont{
+  margin:30px;
+}
+
+.ticketlist h1{
+  color:#BE100C;
+  font-family: 'Be Vietnam', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  margin-left: -900px;
+  padding:20px;
+}
+
+.sort{
+  margin:-60px 0 0 930px;
+}
+
+.sort label{
+  margin-right: 40px;
 }
 
 @keyframes move {
