@@ -1,19 +1,19 @@
 /*Shop SECTION */
-
+.col-md-12 {
+    margin-top: 12%;
+}
 .col-md-12 h1 {
     color: #BE100C;
     font-size: 10rem;
     margin-bottom: 0px;
     font-weight: bold;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 .col-md-12 h2 {
     color: white;
-    font-size: 4rem;
+    font-size: 3rem;
     margin-top: 0px;
     font-weight: bold;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 /* Products Section */
