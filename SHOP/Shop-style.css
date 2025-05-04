@@ -250,3 +250,31 @@
     transform: scale(1); /* Reset zoom to normal size */
 }
 
+.cart-button {
+    position: fixed !important;
+    top: 35px !important;
+    right: 35px !important;
+    z-index: 1000 !important;
+    display: block !important;
+    visibility: visible !important;
+}
+
+/* Cart Button Styles */
+.cart-button {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+
+#cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+}

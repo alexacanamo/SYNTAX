@@ -44,65 +44,69 @@
     </div>
 </div>
 
+<!-- Cart Button -->
+<div class="cart-button-container">
+  <a href="Cart.html" class="cart-button" >
+    <i class="fas fa-shopping-cart"></i>
+    <span id="cart-count">0</span>
+  </a>
+</div>
+
 <!-- Products Section -->
 <div class="products-section">
     <h2>PRODUCTS:</h2>
     <hr class="section-line">
     <div class="products-grid">
         <div class="product-card">
-            <img src="placeholder.jpg" alt="Product Image">
+            <img src="../IMAGES/Stock image.png" alt="Product Image">
             <p>SYNTAX Cap</p>
             <button class="buy-now-button">
               <a href="./Products/Product_Cap.html" style="text-decoration: none; color: white;">BUY NOW</a>
             </button>
         </div>
         <div class="product-card">
-            <img src="placeholder.jpg" alt="Product Image">
+            <img src="../IMAGES/Stock image.png" alt="Product Image">
             <p>SYNTAX Hoodie</p>
             <button class="buy-now-button">
-              <a href="./Products/Product_hoodie.html" style="text-decoration: none; color: white;">BUY NOW</a>
+              <a href="../IMAGES/Stock image.png" style="text-decoration: none; color: white;">BUY NOW</a>
             </button>
         </div>
         <div class="product-card">
-            <img src="placeholder.jpg" alt="Product Image">
+            <img src="../IMAGES/Stock image.png" alt="Product Image">
             <p>SYNTAX Shirt</p>
             <button class="buy-now-button">
               <a href="/Products/Product_shirt.html" style="text-decoration: none; color: white;">BUY NOW</a>
             </button>
         </div>
         <div class="product-card">
-            <img src="placeholder.jpg" alt="Product Image">
+            <img src="../IMAGES/Stock image.png" alt="Product Image">
             <p>SYNTAX Stickers</p>
             <button class="buy-now-button">
               <a href="/Products/Product_stickers.html" style="text-decoration: none; color: white;">BUY NOW</a>
             </button>
         </div>
         <div class="product-card">
-            <img src="placeholder.jpg" alt="Product Image">
-            <p>Image not available</p>
+            <img src="../IMAGES/Stock image.png" alt="Product Image">
             <button class="buy-now-button">
-              <a href="/Products/Product.html" style="text-decoration: none; color: white;">BUY NOW</a>
+              <a href="/Products/Product.html" style="text-decoration: none; color: white;">COMING SOON!</a>
             </button>
         </div>
         <div class="product-card">
-            <img src="placeholder.jpg" alt="Product Image">
-            <p>Image not available</p>
+            <img src="../IMAGES/Stock image.png" alt="Product Image">
             <button class="buy-now-button">
-              <a href="/Products/Product.html" style="text-decoration: none; color: white;">BUY NOW</a>
+              <a href="/Products/Product.html" style="text-decoration: none; color: white;">COMING SOON!</a>
             </button>
         </div>
         <div class="product-card">
-            <img src="placeholder.jpg" alt="Product Image">
-            <p>Image not available</p>
+            <img src="../IMAGES/Stock image.png" alt="Product Image">
             <button class="buy-now-button">
-              <a href="/Products/Product.html" style="text-decoration: none; color: white;">BUY NOW</a>
+              <a href="/Products/Product.html" style="text-decoration: none; color: white;">COMING SOON!</a>
             </button>
         </div>
         <div class="product-card">
-            <img src="placeholder.jpg" alt="Product Image">
-            <p>Image not available</p>
+            <img src="../IMAGES/Stock image.png" alt="Product Image">
             <button class="buy-now-button">
-              <a href="/Products/Product.html" style="text-decoration: none; color: white;">BUY NOW</a>
+              <a href="/Products/Product.html" style="text-decoration: none; color: white;">COMING SOON!</a>
             </button>
         </div>
     </div>
@@ -125,6 +129,13 @@
     </div>
 </div>
 
+<script>
+  // Update the cart count dynamically
+  function updateCartCount() {
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const cartCount = cart.reduce((total, item) => total + item.quantity, 0);
+    document.getElementById('cart-count').textContent = cartCount;
+  }
 
 <script src="https://cdn.tailwindcss.com"></script>
 
