@@ -284,6 +284,7 @@ body {
     width: 100%;
     max-width: 400px;
     text-align: center;
+    margin-top: 8%;
   }
   
   .login-form h2 {
@@ -363,6 +364,7 @@ body {
     width: 100%;
     max-width: 400px;
     text-align: center;
+    margin-top: 12%;
   }
   
   .register-form h2 {
