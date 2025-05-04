@@ -61,7 +61,7 @@ html, body {
 }
 
 nav {
-    position: sticky;
+    position: fixed;
     top: 0;
     overflow: visible; /* Fixed dropdown issue */
     z-index: 1000;
@@ -71,6 +71,7 @@ nav {
     background-color: black;
     padding: 20px;
     font-size: 1.5rem;
+    width: 100%;
 }
 
 .nav-left {
@@ -82,6 +83,7 @@ nav {
 .nav-right {
     display: flex;
     align-items: center;
+    margin-right: 3%;
 }
 
 .nav-right a {
