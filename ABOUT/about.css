@@ -195,7 +195,7 @@ nav {
   animation-timeline: scroll();
   font-family: 'Be Vietnam', Arial, sans-serif;
   color: white;
-  margin-top: 2%;
+  margin-top: 50px;
 }
 
 .details {
@@ -252,7 +252,7 @@ nav {
 
 .detailp {
   margin-left:27%;
-  margin-top: -10.6%;
+  margin-top: -180px;
 }
 
 .boxcont p{
