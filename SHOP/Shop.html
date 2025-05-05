@@ -136,6 +136,22 @@
     const cartCount = cart.reduce((total, item) => total + item.quantity, 0);
     document.getElementById('cart-count').textContent = cartCount;
   }
+
+  // Call updateCartCount on page load
+  document.addEventListener('DOMContentLoaded', updateCartCount);
+
+  // Example function to add items to the cart
+  function addToCart(item) {
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const existingItem = cart.find(cartItem => cartItem.id === item.id);
+    if (existingItem) {
+      existingItem.quantity += item.quantity;
+    } else {
+      cart.push(item);
+    }
+    localStorage.setItem('cart', JSON.stringify(cart));
+    updateCartCount(); // Update cart count after adding an item
+  }
 </script>
 
 <script src="https://cdn.tailwindcss.com"></script>
