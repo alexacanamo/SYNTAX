@@ -2,14 +2,13 @@
 
 html body {
   margin: 0;
-  height: 100%;
+  height: auto%;
   font-family: 'Be Vietnam', Arial, sans-serif;
   background-color: rgb(0, 0, 0);
   color: rgb(0, 0, 0);
   text-align: center;
   font-weight: bold;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-  height:10000px
 } 
 nav {
   position: fixed;
@@ -693,14 +692,13 @@ input[type=text] {
 
   html body {
     margin: 0;
-    height: 100%;
+    height: auto;
     font-family: 'Be Vietnam', Arial, sans-serif;
     background-color: rgb(0, 0, 0);
     color: rgb(0, 0, 0);
     text-align: center;
     font-weight: bold;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    height:10000px
   } 
   nav {
     position: fixed;
